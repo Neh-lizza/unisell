@@ -7,6 +7,8 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
+
+
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -19,24 +21,29 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      // Add this inside your layout, above {children}:
-<nav className="bg-blue-900 text-white p-4 flex justify-between items-center">
-  <a href="/" className="text-xl font-bold">UniSell</a>
-  <div className="flex gap-4 text-sm">
-    <a href="/sell" className="hover:text-blue-200">Sell Item</a>
-    <a href="/subscribe" className="hover:text-blue-200">Subscribe</a>
-    <a href="/login" className="hover:text-blue-200">Login</a>
-  </div>
-</nav>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+
+        <nav className="bg-blue-900 text-white p-4 flex justify-between items-center">
+          <a href="/" className="text-xl font-bold">UniSell</a>
+
+          <div className="flex gap-4 text-sm">
+            <a href="/sell" className="hover:text-blue-200">Sell Item</a>
+            <a href="/subscribe" className="hover:text-blue-200">Subscribe</a>
+            <a href="/login" className="hover:text-blue-200">Login</a>
+          </div>
+        </nav>
+
+        {children}
+
+      </body>
     </html>
   );
 }
