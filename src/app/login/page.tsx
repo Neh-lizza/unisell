@@ -1,9 +1,24 @@
 'use client'
+import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import { Auth } from '@supabase/auth-ui-react'
 import { ThemeSupa } from '@supabase/auth-ui-shared'
 import { supabase } from '@/lib/supabase'
 
 export default function LoginPage() {
+  const router = useRouter()
+
+  useEffect(() => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (event) => {
+        if (event === 'SIGNED_IN') {
+          router.push('/')
+        }
+      }
+    )
+    return () => subscription.unsubscribe()
+  }, [router])
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-md p-8">
@@ -15,7 +30,7 @@ export default function LoginPage() {
           supabaseClient={supabase}
           appearance={{ theme: ThemeSupa }}
           providers={[]}
-          redirectTo="/"
+          redirectTo={`${process.env.NEXT_PUBLIC_SITE_URL || ''}/`}
         />
       </div>
     </div>
