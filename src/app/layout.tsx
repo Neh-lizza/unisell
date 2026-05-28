@@ -12,7 +12,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'UniSell — Buy and sell on campus',
+  title: 'UniSell',
   description: 'Buy and sell secondhand items at University of Buea. No middlemen, no fees.',
 }
 

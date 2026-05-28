@@ -3,6 +3,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
 
@@ -29,9 +30,16 @@ export default function Navbar() {
     <header className="bg-[#1B4332] text-[#FAF7F2] sticky top-0 z-30 border-b border-white/[0.06]">
       <div className="h-14 max-w-[1280px] mx-auto px-6 flex items-center justify-between relative">
 
-        <Link href="/" className="text-[#FAF7F2] no-underline font-bold text-xl tracking-tight">
-          UniSell
-        </Link>
+        {/* Logo */}
+      <Link href="/" className="flex items-center no-underline">
+  <Image
+    src="/logo.png"
+    alt="UniSell"
+    width={120}
+    height={120}
+    className="w-24 h-24 object-contain"
+  />
+</Link>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-7">
