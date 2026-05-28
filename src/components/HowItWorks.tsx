@@ -4,7 +4,7 @@ export default function HowItWorks() {
   const steps = [
     {
       title: 'Browse listings free',
-      body: 'No signup required to browse. Filter by category, search by title.',
+      body: 'No signup required to browse. Filter by category or search by keyword.',
       icon: (
         <svg width={26} height={26} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <rect x="3" y="3" width="7" height="7" rx="1.5" />
@@ -39,28 +39,24 @@ export default function HowItWorks() {
 
   return (
     <section id="how" className="bg-[#1B4332] text-[#FAF7F2]">
-      <div className="max-w-[1180px] mx-auto px-6 py-[72px]">
-        <p className="m-0 text-xs tracking-[0.16em] uppercase font-semibold text-[#D97706]">
-          How UniSell works
+      <div className="max-w-[1180px] mx-auto px-6 py-16">
+        <p className="m-0 text-xs tracking-[0.16em] uppercase font-semibold text-[#D97706] mb-3">
+          How it works
         </p>
-        <h2 className="mt-3 mb-10 text-3xl font-bold tracking-tight text-[#FAF7F2] max-w-[760px]">
-          Three steps to your next dorm essential.
+        <h2 className="m-0 mb-10 text-3xl font-bold tracking-tight text-[#FAF7F2] max-w-[640px]">
+          Three steps to your next campus essential.
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-9">
           {steps.map((s, i) => (
-            <div key={s.title} className="flex flex-col gap-3.5">
-              <div className="w-14 h-14 rounded-[14px] bg-[rgba(217,119,6,0.14)] text-[#F0A93A] inline-flex items-center justify-center border border-[rgba(217,119,6,0.32)]">
+            <div key={s.title} className="flex flex-col gap-3">
+              <div className="w-12 h-12 rounded-xl bg-[rgba(217,119,6,0.14)] text-[#F0A93A] inline-flex items-center justify-center border border-[rgba(217,119,6,0.32)]">
                 {s.icon}
               </div>
               <span className="text-xs text-[#D97706] font-semibold tracking-[0.12em]">
                 STEP {i + 1}
               </span>
-              <h3 className="m-0 text-xl font-bold text-[#FAF7F2] tracking-tight">
-                {s.title}
-              </h3>
-              <p className="m-0 text-[rgba(250,247,242,0.72)] text-[15px] leading-relaxed max-w-xs">
-                {s.body}
-              </p>
+              <h3 className="m-0 text-lg font-bold text-[#FAF7F2] tracking-tight">{s.title}</h3>
+              <p className="m-0 text-[rgba(250,247,242,0.65)] text-sm leading-relaxed">{s.body}</p>
             </div>
           ))}
         </div>
