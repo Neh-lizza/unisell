@@ -109,13 +109,19 @@ test.describe('Category Filters', () => {
 test.describe('Navigation', () => {
   test('Sell item link goes to /sell', async ({ page }) => {
     await page.goto('/')
-    await page.getByRole('link', { name: /Sell item/i }).first().click()
+    await page
+      .getByRole('link', { name: /Sell item/i })
+      .first()
+      .click()
     await expect(page).toHaveURL(/\/sell|\/login/)
   })
 
   test('Subscribe link goes to /subscribe', async ({ page }) => {
     await page.goto('/')
-    await page.getByRole('link', { name: /Subscribe/i }).first().click()
+    await page
+      .getByRole('link', { name: /Subscribe/i })
+      .first()
+      .click()
     await expect(page).toHaveURL(/\/subscribe/)
   })
 
@@ -144,7 +150,10 @@ test.describe('Login Page', () => {
 
   test('can switch to create account tab', async ({ page }) => {
     await page.goto('/login')
-    await page.getByRole('button', { name: /Create account/i }).first().click()
+    await page
+      .getByRole('button', { name: /Create account/i })
+      .first()
+      .click()
     await expect(page.getByPlaceholder(/At least 6 characters/i)).toBeVisible()
   })
 
@@ -171,7 +180,9 @@ test.describe('Subscribe Page', () => {
   test('loads with correct heading', async ({ page }) => {
     await page.goto('/subscribe')
     // Use exact heading text to avoid strict mode violation
-    await expect(page.getByRole('heading', { name: 'Start selling for 300 XAF/year' })).toBeVisible()
+    await expect(
+      page.getByRole('heading', { name: 'Start selling for 300 XAF/year' })
+    ).toBeVisible()
   })
 
   test('shows MTN Mobile Money section', async ({ page }) => {

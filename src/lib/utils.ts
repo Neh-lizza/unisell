@@ -45,7 +45,7 @@ export function getConditionStyle(condition: string): {
   dot: string
 } {
   const styles: Record<string, { bg: string; color: string; dot: string }> = {
-    New:  { bg: '#E6F3EA', color: '#1B4332', dot: '#2D6A4F' },
+    New: { bg: '#E6F3EA', color: '#1B4332', dot: '#2D6A4F' },
     Used: { bg: '#FDF1DF', color: '#7A4400', dot: '#D97706' },
     Worn: { bg: '#FBE6E1', color: '#7A1F12', dot: '#B83A2C' },
   }

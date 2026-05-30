@@ -11,13 +11,9 @@ export default defineConfig({
     globals: true,
     setupFiles: ['./src/test/setup.ts'],
     coverage: {
-      reporter: ['text', 'json', 'html'],
-      exclude: [
-        'node_modules/',
-        'src/test/',
-        '.next/',
-        '*.config.*',
-      ],
+      provider: 'v8',
+      reporter: ['text', 'json', 'lcov'],
+      exclude: ['node_modules/', 'src/test/', '.next/', '*.config.*', 'e2e/'],
     },
   },
   resolve: {

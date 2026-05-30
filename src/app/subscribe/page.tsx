@@ -33,7 +33,17 @@ export default function SubscribePage() {
             ].map((item) => (
               <div key={item} className="flex items-start gap-3">
                 <div className="w-5 h-5 rounded-full bg-[#E6F3EA] flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg width={12} height={12} viewBox="0 0 24 24" fill="none" stroke="#1B4332" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg
+                    width={12}
+                    height={12}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#1B4332"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
                     <path d="M20 6L9 17l-5-5" />
                   </svg>
                 </div>
@@ -60,7 +70,9 @@ export default function SubscribePage() {
               </div>
             </div>
             <div className="bg-[#FAF7F2] rounded-xl px-5 py-4 flex items-center justify-between">
-              <p className="m-0 text-2xl font-bold tracking-widest text-[#1B4332] font-mono">6XX XXX XXX</p>
+              <p className="m-0 text-2xl font-bold tracking-widest text-[#1B4332] font-mono">
+                6XX XXX XXX
+              </p>
               <p className="m-0 text-sm text-[#6B6B6B]">Name: UniSell</p>
             </div>
           </div>
@@ -76,7 +88,9 @@ export default function SubscribePage() {
               </div>
             </div>
             <div className="bg-[#FAF7F2] rounded-xl px-5 py-4 flex items-center justify-between">
-              <p className="m-0 text-2xl font-bold tracking-widest text-[#1B4332] font-mono">6XX XXX XXX</p>
+              <p className="m-0 text-2xl font-bold tracking-widest text-[#1B4332] font-mono">
+                6XX XXX XXX
+              </p>
               <p className="m-0 text-sm text-[#6B6B6B]">Name: UniSell</p>
             </div>
           </div>
@@ -87,15 +101,23 @@ export default function SubscribePage() {
           <p className="m-0 mb-5 text-[rgba(250,247,242,0.72)] text-[15px] leading-relaxed">
             WhatsApp your screenshot to activate your seller account within 24 hours.
           </p>
-          <a href="https://wa.me/237XXXXXXXXX?text=Hi%2C%20I%20just%20paid%20300%20XAF%20for%20my%20UniSell%20subscription.%20Here%20is%20my%20screenshot."
-            target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#25D366] text-white no-underline px-6 py-3.5 rounded-xl font-semibold text-[15px] hover:bg-[#1FBB5A] transition-colors">
+          <a
+            href="https://wa.me/237XXXXXXXXX?text=Hi%2C%20I%20just%20paid%20300%20XAF%20for%20my%20UniSell%20subscription.%20Here%20is%20my%20screenshot."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#25D366] text-white no-underline px-6 py-3.5 rounded-xl font-semibold text-[15px] hover:bg-[#1FBB5A] transition-colors"
+          >
             <svg width={18} height={18} viewBox="0 0 32 32" aria-hidden="true">
-              <path fill="currentColor" d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.4L3 29l6.8-1.8C11.7 28.4 13.8 29 16 29c7.2 0 13-5.8 13-13S23.2 3 16 3zm0 23.6c-2 0-3.9-.5-5.6-1.6l-.4-.2-4 1 1.1-3.9-.3-.4C5.6 19.9 5 18 5 16c0-6.1 4.9-11 11-11s11 4.9 11 11-4.9 11-11 11zm6.2-8.3c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.6.2-.2.2-.3.4-.5.1-.2.1-.4 0-.5 0-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.3 3.1c.2.2 2.2 3.3 5.4 4.7.8.3 1.4.5 1.8.7.8.2 1.5.2 2.1.1.6-.1 2-.8 2.3-1.6.3-.8.3-1.4.2-1.6 0-.2-.3-.3-.6-.4z" />
+              <path
+                fill="currentColor"
+                d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.4L3 29l6.8-1.8C11.7 28.4 13.8 29 16 29c7.2 0 13-5.8 13-13S23.2 3 16 3zm0 23.6c-2 0-3.9-.5-5.6-1.6l-.4-.2-4 1 1.1-3.9-.3-.4C5.6 19.9 5 18 5 16c0-6.1 4.9-11 11-11s11 4.9 11 11-4.9 11-11 11zm6.2-8.3c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.6.2-.2.2-.3.4-.5.1-.2.1-.4 0-.5 0-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.3 3.1c.2.2 2.2 3.3 5.4 4.7.8.3 1.4.5 1.8.7.8.2 1.5.2 2.1.1.6-.1 2-.8 2.3-1.6.3-.8.3-1.4.2-1.6 0-.2-.3-.3-.6-.4z"
+              />
             </svg>
             Send screenshot on WhatsApp
           </a>
-          <p className="m-0 mt-4 text-xs text-[rgba(250,247,242,0.5)]">237XXXXXXXXX · usually activated same day</p>
+          <p className="m-0 mt-4 text-xs text-[rgba(250,247,242,0.5)]">
+            237XXXXXXXXX · usually activated same day
+          </p>
         </div>
       </section>
     </div>
