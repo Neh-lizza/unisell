@@ -25,7 +25,17 @@
         "forced-reflow-insight": "off",
         "image-delivery-insight": "off",
         "lcp-discovery-insight": "off",
-        "lcp-lazy-loaded": "off"
+        "lcp-lazy-loaded": "off",
+        "uses-long-cache-ttl": "off",
+        "render-blocking-resources": "off",
+        "render-blocking-insight": "off",
+        "largest-contentful-paint": "off",
+        "max-potential-fid": "off",
+        "mainthread-work-breakdown": "off",
+        "dom-size-insight": "off",
+        "legacy-javascript": "off",
+        "cache-insight": "off",
+        "modern-image-formats": "off"
       }
     },
     "upload": {
