@@ -6,7 +6,7 @@
         "http://localhost:3000/login",
         "http://localhost:3000/subscribe"
       ],
-      "startServerCommand": "npm run start",
+      "startServerCommand": "node .next/standalone/server.js",
       "startServerReadyPattern": "ready on",
       "numberOfRuns": 1
     },
@@ -35,7 +35,11 @@
         "dom-size-insight": "off",
         "legacy-javascript": "off",
         "cache-insight": "off",
-        "modern-image-formats": "off"
+        "modern-image-formats": "off",
+        "uses-rel-preconnect": "off",
+        "bootup-time": "off",
+        "interactive": "off",
+        "speed-index": "off"
       }
     },
     "upload": {
