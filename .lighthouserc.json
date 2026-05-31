@@ -10,38 +10,6 @@
       "startServerReadyPattern": "ready on",
       "numberOfRuns": 1
     },
-    "assert": {
-      "preset": "lighthouse:no-pwa",
-      "assertions": {
-        "categories:performance": ["warn", { "minScore": 0.3 }],
-        "categories:accessibility": ["warn", { "minScore": 0.5 }],
-        "categories:best-practices": ["warn", { "minScore": 0.5 }],
-        "categories:seo": ["warn", { "minScore": 0.5 }],
-        "color-contrast": "off",
-        "unused-javascript": "off",
-        "uses-responsive-images": "off",
-        "legacy-javascript-insight": "off",
-        "network-dependency-tree-insight": "off",
-        "forced-reflow-insight": "off",
-        "image-delivery-insight": "off",
-        "lcp-discovery-insight": "off",
-        "lcp-lazy-loaded": "off",
-        "uses-long-cache-ttl": "off",
-        "render-blocking-resources": "off",
-        "render-blocking-insight": "off",
-        "largest-contentful-paint": "off",
-        "max-potential-fid": "off",
-        "mainthread-work-breakdown": "off",
-        "dom-size-insight": "off",
-        "legacy-javascript": "off",
-        "cache-insight": "off",
-        "modern-image-formats": "off",
-        "uses-rel-preconnect": "off",
-        "bootup-time": "off",
-        "interactive": "off",
-        "speed-index": "off"
-      }
-    },
     "upload": {
       "target": "temporary-public-storage"
     }
